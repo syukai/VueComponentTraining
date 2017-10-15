@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>Vue Training</title>
+    <meta charset="utf-8">
+    <!--/* 互換表示させない（IE） */-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-language" content="ja">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--/* ページをキャッシュさせない（戻るや再読み込みでおかしくなるので） */-->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+
+    <!--/* SpringSecurityが有効な状態でajax-POSTを使用するためのトークンを受け取る。（通信時にcommon.jsのajaxsendにてヘッダに埋め込む） */-->
+    <meta name="_csrf" content="aaa" th:content="${_csrf.token}" />
+    <meta name="_csrf_header"  content="bbb"th:content="${_csrf.headerName}" />
+
+</head>
+<body>
+
+<div id="sc-main">
+</div>
+
+
+
+
+<!--/* 個別スクリプト */-->
+<script src="/dist/sp/menu.js"></script>
+
+</body>
+</html>

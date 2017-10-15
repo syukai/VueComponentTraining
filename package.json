@@ -1,0 +1,33 @@
+{
+  "name": "webpacktrial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server -o "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "http-server": "^0.7.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^13.0.4",
+    "vue-style-loader": "^3.0.1",
+    "vue-template-compiler": "^2.4.2",
+    "vuex": "^2.3.1",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "perfect-scrollbar": "^0.8.1",
+    "vue": "^2.4.2",
+    "vue-js-modal": "^1.2.9",
+    "vue-perfect-scrollbar": "0.0.12"
+  }
+}

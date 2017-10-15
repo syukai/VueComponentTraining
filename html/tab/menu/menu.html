@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Vue Training</title>
+	<!--/* 互換表示させない（IE） */-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="content-language" content="ja">
+
+	<!--/* ページをキャッシュさせない（戻るや再読み込みでおかしくなるので） */-->
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+
+	<!--/* SpringSecurityが有効な状態でajax-POSTを使用するためのトークンを受け取る。（通信時にcommon.jsのajaxsendにてヘッダに埋め込む） */-->
+	<meta name="_csrf" content="aaa" th:content="${_csrf.token}" />
+	<meta name="_csrf_header"  content="bbb"th:content="${_csrf.headerName}" />
+
+</head>
+<body>
+
+<div id="sc-main">
+	<div class="sc-wrapper clearfix">
+		
+		<div class="cl2 clearfix">
+
+			<!--/* お知らせ */-->
+			<div id="data_list" class="sc-info1" >
+
+			</div>
+		</div>
+		
+<div id="app"></div>
+	</div><!--/* .sc-wrapper */-->
+</div><!--/* #sc-main */-->
+
+<!--/* 個別スクリプト */-->
+<script src="/dist/tab/menu.js" ></script>
+</body>
+</html>
